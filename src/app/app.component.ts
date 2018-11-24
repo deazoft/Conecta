@@ -13,7 +13,7 @@ import { usuarioENT} from './entities/usuarioENT';
 })
 
 export class AppComponent implements OnInit {
-  title = 'Conecta'
+  title = 'Conecta3'
   usuario: usuarioENT = {
     id: 1,
     name: 'Windstorm'

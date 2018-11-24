@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {apiKey: "AIzaSyAY44Zy-XYHVBEcVC71NJLxqt_oxIxx5lo",
+  authDomain: "alcaldia-f7dd5.firebaseapp.com",
+  databaseURL: "https://alcaldia-f7dd5.firebaseio.com",
+  projectId: "alcaldia-f7dd5",
+  storageBucket: "alcaldia-f7dd5.appspot.com",
+  messagingSenderId: "147106065217"}
+
 };
 
 /*

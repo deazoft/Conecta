@@ -15,4 +15,8 @@ export class UsuarioDetailComponent implements OnInit {
   ngOnInit() {
   }
 
+  cambiar(){
+    this.usuario.name = 'Prueba¡';
+  }
+
 }
