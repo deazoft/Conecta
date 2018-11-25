@@ -59,7 +59,7 @@ a:hover {
 	width: 100%; 
 	height: 100%; 
 	overflow: visible; 
-	background: #fff url(/assets/images/loading.gif) no-repeat center center;
+	background: #fff url(../images/loading.gif) no-repeat center center;
 }
 .fullscreen {
     width:100%;
@@ -169,7 +169,7 @@ a:hover {
 	font-size: 56px;
 	font-weight: 300;
 	color: #fff;
-	margin: 30px 0 30px 0;
+	margin: 90px 0 30px 0;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
 .landing p, .landing h2 {
@@ -194,7 +194,7 @@ a:hover {
 	color: #fff;
 }
 .signup-header {
-	margin: 150px 0 100px;
+	margin: 90px 0 100px;
 	background: rgba(255,255,255,0.2);
 	border-radius: 4px;
 	padding-left: 20px;
@@ -263,8 +263,27 @@ a:hover {
 .btn-section {
 	padding-top: 20px;
 }
+.proyecto{
+	background-color: #f6f6f6;
+	padding: 10px;
+	border: solid 1px #d1d1d1;
+	padding-right: 40px;
+	margin-bottom: 10px;
+}
+.proyecto li{
+	border-bottom: solid 1px #d1d1d1;
+	list-style: none;
+	line-height: 30px;
+}
+.pe-7s-check {
+	color: #1f96e0;
+}
+
+#perfil{
+	margin-top: 40px;
+}
 #feature {
-	padding-top: 50px;
+	padding-top: 30px;
 	background: #f6f6f6;
 }
 #feature h2 {
