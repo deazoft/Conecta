@@ -1,0 +1,67 @@
+<div class="fullscreen landing parallax" style="background-image:url('assets/images/trabajos.jpg');" data-img-width="2000"
+  data-img-height="872" data-diff="100">
+
+  <div class="overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-md-offset-7 text-right">
+          <!-- /.main title -->
+          <h1 class="wow fadeInLeft">
+            TRAB<span class="highlight">A</span>JOS
+          </h1>
+
+          <!-- /.header paragraph -->
+          <div class="landing-text wow fadeInUp">
+            <p>Encuentra todos los proyectos publicados por las empresas que buscan un profesional como tú.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <h3>CATEGORÍAS</h3>
+      <ul class="list-group">
+        <li class="list-group-item active">Desarrollo de Software <span class="numero">248</span></li>
+        <li class="list-group-item">Diseño de Aplicaciones <span class="numero">158</span></li>
+        <li class="list-group-item">Desarrollo Web<span class="numero">60</span></li>
+        <li class="list-group-item">Multimedia<span class="numero">148</span></li>
+      </ul>
+    </div>
+    <!-- /.vista de proyectos -->
+    <div id="perfil">
+      <div class="col-md-8">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-sm-12 wow fadeInLeft feature-title">
+              <h2>MÍDETELE AL RETO</h2>
+              <p>Encuentra miles de proyectos para desarrollar tus capacidades y crecer profesionalmente</p>
+              <!-- /.listado de proyectos -->
+              <div class="col-sm-10">
+                <ul class="heroes">
+                  <li *ngFor="let proyecto of proyectos">
+                   <app-proyecto-list [proyecto]="proyecto.payload.doc.data()" ></app-proyecto-list>
+                  </li>
+                </ul>
+
+
+
+              </div>
+
+
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -61,7 +61,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/usuario-detail/usuario-detail.component.ts</code>
+    <code>src/app/Components/usuario-detail/usuario-detail.component.ts</code>
 </p>
 
 
@@ -137,20 +137,6 @@
                     </td>
                 </tr>
 
-                <tr>
-                    <td class="col-md-4">
-                        <h6><b>Inputs</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                <a href="#usuario">usuario</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
 
 
 
@@ -170,7 +156,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/usuario-detail/usuario-detail.component.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/Components/usuario-detail/usuario-detail.component.ts:10</a></div>
                             </td>
                         </tr>
 
@@ -178,30 +164,7 @@
         </table>
 </section>
 
-    <section>
-    <h3 id="inputs">Inputs</h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-2">
-                        <a name="usuario"></a>
-                        <code>usuario</code>
-                    </td>
-                    <td class="col-md-10">
-                            <p>
-                            <em>Type :</em>    <code><a href="../classes/usuarioENT.html" target="_self" >usuarioENT</a></code>
 
-                            </p>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/usuario-detail/usuario-detail.component.ts:12</a></div>
-                            </td>
-                        </tr>
-            </tbody>
-        </table>
-</section>
 
 
 
@@ -232,7 +195,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/usuario-detail/usuario-detail.component.ts:15</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/Components/usuario-detail/usuario-detail.component.ts:15</a></div>
                             </td>
                         </tr>
 
@@ -255,9 +218,9 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit,Input } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 
-import { usuarioENT } from &#x27;../entities/usuarioENT&#x27;;
+
 
 @Component({
   selector: &#x27;app-usuario-detail&#x27;,
@@ -266,21 +229,258 @@ import { usuarioENT } from &#x27;../entities/usuarioENT&#x27;;
 })
 export class UsuarioDetailComponent implements OnInit {
 
-  @Input() usuario: usuarioENT; 
+  
   constructor() { }
 
   ngOnInit() {
   }
+
+  
 
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;p&gt;
-  usuario-detail works!{{usuario.name}}
-&lt;/p&gt;
-</code></pre>
+        <pre class="line-numbers"><code class="language-html"> &lt;!-- /.parallax full screen background image --&gt;
+ &lt;div class&#x3D;&quot;fullscreen landing parallax&quot; style&#x3D;&quot;background-image:url(&#x27;assets/images/perfil.jpg&#x27;);&quot; data-img-width&#x3D;&quot;2000&quot; data-img-height&#x3D;&quot;872&quot; data-diff&#x3D;&quot;100&quot;&gt;
+
+  &lt;div class&#x3D;&quot;overlay&quot;&gt;
+      &lt;div class&#x3D;&quot;container&quot;&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+              &lt;div class&#x3D;&quot;col-md-5 col-md-offset-7 text-right&quot;&gt;
+                  &lt;!-- /.main title --&gt;
+                  &lt;h1 class&#x3D;&quot;wow fadeInLeft&quot;&gt;
+                      PER&lt;span class&#x3D;&quot;highlight&quot;&gt;F&lt;/span&gt;IL
+                  &lt;/h1&gt;
+
+                  &lt;!-- /.header paragraph --&gt;
+                  &lt;div class&#x3D;&quot;landing-text wow fadeInUp&quot;&gt;
+                      &lt;p&gt;Cuéntanos tus habiliddes, califica tus proyectos, sigue creciedo profesionalmente.&lt;/p&gt;
+                  &lt;/div&gt;				  
+              &lt;/div&gt; 
+          &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/div&gt; 
+&lt;/div&gt;    
+&lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;row profile&quot;&gt;
+        &lt;div class&#x3D;&quot;col-md-3&quot;&gt;
+            &lt;div class&#x3D;&quot;profile-sidebar&quot;&gt;
+                &lt;!-- SIDEBAR USERPIC --&gt;
+                &lt;div class&#x3D;&quot;profile-userpic&quot;&gt;
+                    &lt;img src&#x3D;&quot;assets/images/profile-picture.png&quot; class&#x3D;&quot;img-responsive&quot; alt&#x3D;&quot;&quot;&gt;
+                &lt;/div&gt;
+                &lt;!-- END SIDEBAR USERPIC --&gt;
+                &lt;!-- SIDEBAR USER TITLE --&gt;
+                &lt;div class&#x3D;&quot;profile-usertitle&quot;&gt;
+                    &lt;div class&#x3D;&quot;profile-usertitle-name&quot;&gt;
+                        Juan Pablo Ramírez
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;profile-usertitle-job&quot;&gt;
+                        Desarrollador
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- END SIDEBAR USER TITLE --&gt;
+                &lt;!-- SIDEBAR BUTTONS --&gt;
+                &lt;div class&#x3D;&quot;profile-userbuttons&quot;&gt;
+                    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success btn-sm&quot;&gt;Proponer&lt;/button&gt;
+                    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-sm&quot;&gt;Mensaje&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;!-- END SIDEBAR BUTTONS --&gt;
+                &lt;!-- SIDEBAR MENU --&gt;
+                &lt;div class&#x3D;&quot;profile-usermenu&quot;&gt;
+                    &lt;ul class&#x3D;&quot;nav&quot;&gt;
+                        &lt;li class&#x3D;&quot;active&quot;&gt;
+                            &lt;a href&#x3D;&quot;#&quot;&gt;
+                            &lt;i class&#x3D;&quot;glyphicon glyphicon-home&quot;&gt;&lt;/i&gt;
+                            Vista general &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href&#x3D;&quot;#&quot;&gt;
+                            &lt;i class&#x3D;&quot;glyphicon glyphicon-user&quot;&gt;&lt;/i&gt;
+                            Información del contacto &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href&#x3D;&quot;#&quot; target&#x3D;&quot;_blank&quot;&gt;
+                            &lt;i class&#x3D;&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/i&gt;
+                            Habilidades &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href&#x3D;&quot;#&quot;&gt;
+                            &lt;i class&#x3D;&quot;glyphicon glyphicon-flag&quot;&gt;&lt;/i&gt;
+                            Más información &lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt; 
+        &lt;/div&gt;
+&lt;!--descripcioin--&gt;           
+&lt;div class&#x3D;&quot;col-md-7&quot;&gt;
+                    &lt;div class&#x3D;&quot;container&quot;&gt;
+                        &lt;div class&#x3D;&quot;row&quot;&gt;
+                        &lt;div class&#x3D;&quot;col-md-9 col-sm-10 wow fadeInLeft feature-title&quot;&gt;
+                            &lt;h2&gt;JUAN PABLO RAMÍREZ&lt;/h2&gt;
+                            &lt;p&gt;Apasionado por los proyectos que emprende, en especial los que implican retos donde la innovación tecnológica juegue un papel fundamental. &lt;br&gt;Capaz de dar soluciones a todo tipo de problemas planteados en el manejo y manipulación de la información aplicando análisis, diseño y construcción de soluciones informáticas. &lt;br&gt;Conocimiento en el diseño, implementación y gestión de redes, desarrollo y administración de bases de datos en SQL Server, MYSQL, Oracle. Desarrollo rápido de aplicaciones software enfocado a entornos de escritorio y web en: JAVA, .NET, Python, HTML, JAVASCRIPT y PHP, haciendo uso de diferentes IDE, Frameworks de desarrollo y herramientas CASE, desarrollo de aplicaciones móviles en Android, IOS, Windows Phone.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+&lt;!--vista de perfil--&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rating-block&quot;&gt;
+                    &lt;h4&gt;Calificaciones&lt;/h4&gt;
+                    &lt;h2 class&#x3D;&quot;bold padding-bottom-7&quot;&gt;3.8 &lt;small&gt;/ 5&lt;/small&gt;&lt;/h2&gt;
+                    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning btn-sm&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                      &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning btn-sm&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                      &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning btn-sm&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                      &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-grey btn-sm&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                      &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-grey btn-sm&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                      &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-6&quot;&gt;
+                &lt;h4&gt;Ranking&lt;/h4&gt;
+                &lt;div class&#x3D;&quot;pull-left&quot;&gt;
+                    &lt;div class&#x3D;&quot;pull-left&quot; style&#x3D;&quot;width:35px; line-height:1;&quot;&gt;
+                        &lt;div style&#x3D;&quot;height:9px; margin:5px 0;&quot;&gt;5 &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;pull-left&quot; style&#x3D;&quot;width:180px;&quot;&gt;
+                        &lt;div class&#x3D;&quot;progress&quot; style&#x3D;&quot;height:9px; margin:8px 0;&quot;&gt;
+                          &lt;div class&#x3D;&quot;progress-bar progress-bar-success&quot; role&#x3D;&quot;progressbar&quot; aria-valuenow&#x3D;&quot;5&quot; aria-valuemin&#x3D;&quot;0&quot; aria-valuemax&#x3D;&quot;5&quot; style&#x3D;&quot;width: 1000%&quot;&gt;
+                            &lt;span class&#x3D;&quot;sr-only&quot;&gt;80% Complete (danger)&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;pull-right&quot; style&#x3D;&quot;margin-left:10px;&quot;&gt;1&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;pull-left&quot;&gt;
+                    &lt;div class&#x3D;&quot;pull-left&quot; style&#x3D;&quot;width:35px; line-height:1;&quot;&gt;
+                        &lt;div style&#x3D;&quot;height:9px; margin:5px 0;&quot;&gt;4 &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;pull-left&quot; style&#x3D;&quot;width:180px;&quot;&gt;
+                        &lt;div class&#x3D;&quot;progress&quot; style&#x3D;&quot;height:9px; margin:8px 0;&quot;&gt;
+                          &lt;div class&#x3D;&quot;progress-bar progress-bar-primary&quot; role&#x3D;&quot;progressbar&quot; aria-valuenow&#x3D;&quot;4&quot; aria-valuemin&#x3D;&quot;0&quot; aria-valuemax&#x3D;&quot;5&quot; style&#x3D;&quot;width: 80%&quot;&gt;
+                            &lt;span class&#x3D;&quot;sr-only&quot;&gt;80% Complete (danger)&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;pull-right&quot; style&#x3D;&quot;margin-left:10px;&quot;&gt;1&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;pull-left&quot;&gt;
+                    &lt;div class&#x3D;&quot;pull-left&quot; style&#x3D;&quot;width:35px; line-height:1;&quot;&gt;
+                        &lt;div style&#x3D;&quot;height:9px; margin:5px 0;&quot;&gt;3 &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;pull-left&quot; style&#x3D;&quot;width:180px;&quot;&gt;
+                        &lt;div class&#x3D;&quot;progress&quot; style&#x3D;&quot;height:9px; margin:8px 0;&quot;&gt;
+                          &lt;div class&#x3D;&quot;progress-bar progress-bar-info&quot; role&#x3D;&quot;progressbar&quot; aria-valuenow&#x3D;&quot;3&quot; aria-valuemin&#x3D;&quot;0&quot; aria-valuemax&#x3D;&quot;5&quot; style&#x3D;&quot;width: 60%&quot;&gt;
+                            &lt;span class&#x3D;&quot;sr-only&quot;&gt;80% Complete (danger)&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;pull-right&quot; style&#x3D;&quot;margin-left:10px;&quot;&gt;0&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;pull-left&quot;&gt;
+                    &lt;div class&#x3D;&quot;pull-left&quot; style&#x3D;&quot;width:35px; line-height:1;&quot;&gt;
+                        &lt;div style&#x3D;&quot;height:9px; margin:5px 0;&quot;&gt;2 &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;pull-left&quot; style&#x3D;&quot;width:180px;&quot;&gt;
+                        &lt;div class&#x3D;&quot;progress&quot; style&#x3D;&quot;height:9px; margin:8px 0;&quot;&gt;
+                          &lt;div class&#x3D;&quot;progress-bar progress-bar-warning&quot; role&#x3D;&quot;progressbar&quot; aria-valuenow&#x3D;&quot;2&quot; aria-valuemin&#x3D;&quot;0&quot; aria-valuemax&#x3D;&quot;5&quot; style&#x3D;&quot;width: 40%&quot;&gt;
+                            &lt;span class&#x3D;&quot;sr-only&quot;&gt;80% Complete (danger)&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;pull-right&quot; style&#x3D;&quot;margin-left:10px;&quot;&gt;0&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;pull-left&quot;&gt;
+                    &lt;div class&#x3D;&quot;pull-left&quot; style&#x3D;&quot;width:35px; line-height:1;&quot;&gt;
+                        &lt;div style&#x3D;&quot;height:9px; margin:5px 0;&quot;&gt;1 &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;pull-left&quot; style&#x3D;&quot;width:180px;&quot;&gt;
+                        &lt;div class&#x3D;&quot;progress&quot; style&#x3D;&quot;height:9px; margin:8px 0;&quot;&gt;
+                          &lt;div class&#x3D;&quot;progress-bar progress-bar-danger&quot; role&#x3D;&quot;progressbar&quot; aria-valuenow&#x3D;&quot;1&quot; aria-valuemin&#x3D;&quot;0&quot; aria-valuemax&#x3D;&quot;5&quot; style&#x3D;&quot;width: 20%&quot;&gt;
+                            &lt;span class&#x3D;&quot;sr-only&quot;&gt;80% Complete (danger)&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;pull-right&quot; style&#x3D;&quot;margin-left:10px;&quot;&gt;0&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt; 
+            &lt;/div&gt;         
+       
+&lt;!--review block--&gt;
+                &lt;hr/&gt;
+                &lt;div class&#x3D;&quot;review-block&quot;&gt;
+                    &lt;div class&#x3D;&quot;row&quot;&gt;
+                        &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                            &lt;img src&#x3D;&quot;assets/images/profile1.png&quot; class&#x3D;&quot;img-rounded&quot;&gt;
+                            &lt;div class&#x3D;&quot;review-block-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Pedro Manuel Escobar&lt;/a&gt;&lt;/div&gt;
+                            &lt;div class&#x3D;&quot;review-block-date&quot;&gt;29 de noviembre 2018&lt;br/&gt;hace 1 día&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+                            &lt;div class&#x3D;&quot;review-block-rate&quot;&gt;
+                                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning btn-xs&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                                  &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning btn-xs&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                                  &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning btn-xs&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                                  &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn btn-grey btn-xs&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                                  &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn btn-grey btn-xs&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                                  &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;review-block-title&quot;&gt;Excelente proyecto, buen trabajo&lt;/div&gt;
+                            &lt;div class&#x3D;&quot;review-block-description&quot;&gt;Se cumplió con el objetivo del reto, Juan Pablo es un profesional responsable, atento, proactivo y dispuesto a dar soluciones innovadoras. No tuvimos inconveniente en la comunicación, lo recomiendo para desarrollo de proyectos.&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;hr/&gt;
+                    &lt;div class&#x3D;&quot;row&quot;&gt;
+                        &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                            &lt;img src&#x3D;&quot;assets/images/profile2.png&quot; class&#x3D;&quot;img-rounded&quot;&gt;
+                            &lt;div class&#x3D;&quot;review-block-name&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Sonia Martínez&lt;/a&gt;&lt;/div&gt;
+                            &lt;div class&#x3D;&quot;review-block-date&quot;&gt;January 29, 2016&lt;br/&gt;1 day ago&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;col-sm-9&quot;&gt;
+                            &lt;div class&#x3D;&quot;review-block-rate&quot;&gt;
+                                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning btn-xs&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                                  &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning btn-xs&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                                  &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning btn-xs&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                                  &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn btn-grey btn-xs&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                                  &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn btn-grey btn-xs&quot; aria-label&#x3D;&quot;Left Align&quot;&gt;
+                                  &lt;span class&#x3D;&quot;glyphicon glyphicon-star&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;review-block-title&quot;&gt;Muy buen trabajador&lt;/div&gt;
+                            &lt;div class&#x3D;&quot;review-block-description&quot;&gt;Se cumplió con el objetivo del reto, Juan Pablo es un profesional responsable, atento, proactivo y dispuesto a dar soluciones innovadoras. No tuvimos inconveniente en la comunicación, lo recomiendo para desarrollo de proyectos.&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;/div&gt;
+                &lt;/div&gt; </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
@@ -315,8 +515,8 @@ export class UsuarioDetailComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><p>  usuario-detail works!{{usuario.name}}</p></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'UsuarioDetailComponent', 'selector': 'app-usuario-detail'}];
+        var COMPONENT_TEMPLATE = '<div> <!-- /.parallax full screen background image --> <div class="fullscreen landing parallax" style="background-image:url(\'assets/images/perfil.jpg\');" data-img-width="2000" data-img-height="872" data-diff="100">  <div class="overlay">      <div class="container">          <div class="row">              <div class="col-md-5 col-md-offset-7 text-right">                  <!-- /.main title -->                  <h1 class="wow fadeInLeft">                      PER<span class="highlight">F</span>IL                  </h1>                  <!-- /.header paragraph -->                  <div class="landing-text wow fadeInUp">                      <p>Cuéntanos tus habiliddes, califica tus proyectos, sigue creciedo profesionalmente.</p>                  </div>				                </div>           </div>      </div>  </div> </div>    <div class="container">    <div class="row profile">        <div class="col-md-3">            <div class="profile-sidebar">                <!-- SIDEBAR USERPIC -->                <div class="profile-userpic">                    <img src="assets/images/profile-picture.png" class="img-responsive" alt="">                </div>                <!-- END SIDEBAR USERPIC -->                <!-- SIDEBAR USER TITLE -->                <div class="profile-usertitle">                    <div class="profile-usertitle-name">                        Juan Pablo Ramírez                    </div>                    <div class="profile-usertitle-job">                        Desarrollador                    </div>                </div>                <!-- END SIDEBAR USER TITLE -->                <!-- SIDEBAR BUTTONS -->                <div class="profile-userbuttons">                    <button type="button" class="btn btn-success btn-sm">Proponer</button>                    <button type="button" class="btn btn-danger btn-sm">Mensaje</button>                </div>                <!-- END SIDEBAR BUTTONS -->                <!-- SIDEBAR MENU -->                <div class="profile-usermenu">                    <ul class="nav">                        <li class="active">                            <a href="#">                            <i class="glyphicon glyphicon-home"></i>                            Vista general </a>                        </li>                        <li>                            <a href="#">                            <i class="glyphicon glyphicon-user"></i>                            Información del contacto </a>                        </li>                        <li>                            <a href="#" target="_blank">                            <i class="glyphicon glyphicon-ok"></i>                            Habilidades </a>                        </li>                        <li>                            <a href="#">                            <i class="glyphicon glyphicon-flag"></i>                            Más información </a>                        </li>                    </ul>                </div>            </div>         </div><!--descripcioin-->           <div class="col-md-7">                    <div class="container">                        <div class="row">                        <div class="col-md-9 col-sm-10 wow fadeInLeft feature-title">                            <h2>JUAN PABLO RAMÍREZ</h2>                            <p>Apasionado por los proyectos que emprende, en especial los que implican retos donde la innovación tecnológica juegue un papel fundamental. <br>Capaz de dar soluciones a todo tipo de problemas planteados en el manejo y manipulación de la información aplicando análisis, diseño y construcción de soluciones informáticas. <br>Conocimiento en el diseño, implementación y gestión de redes, desarrollo y administración de bases de datos en SQL Server, MYSQL, Oracle. Desarrollo rápido de aplicaciones software enfocado a entornos de escritorio y web en: JAVA, .NET, Python, HTML, JAVASCRIPT y PHP, haciendo uso de diferentes IDE, Frameworks de desarrollo y herramientas CASE, desarrollo de aplicaciones móviles en Android, IOS, Windows Phone.</p>                    </div>                    </div>                    </div>                </div><!--vista de perfil-->            <div class="col-sm-3">                <div class="rating-block">                    <h4>Calificaciones</h4>                    <h2 class="bold padding-bottom-7">3.8 <small>/ 5</small></h2>                    <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                    </button>                    <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                    </button>                    <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                    </button>                    <button type="button" class="btn btn-grey btn-sm" aria-label="Left Align">                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                    </button>                    <button type="button" class="btn btn-grey btn-sm" aria-label="Left Align">                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                    </button>                </div>            </div>            <div class="col-sm-6">                <h4>Ranking</h4>                <div class="pull-left">                    <div class="pull-left" style="width:35px; line-height:1;">                        <div style="height:9px; margin:5px 0;">5 <span class="glyphicon glyphicon-star"></span></div>                    </div>                    <div class="pull-left" style="width:180px;">                        <div class="progress" style="height:9px; margin:8px 0;">                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" style="width: 1000%">                            <span class="sr-only">80% Complete (danger)</span>                          </div>                        </div>                    </div>                    <div class="pull-right" style="margin-left:10px;">1</div>                </div>                <div class="pull-left">                    <div class="pull-left" style="width:35px; line-height:1;">                        <div style="height:9px; margin:5px 0;">4 <span class="glyphicon glyphicon-star"></span></div>                    </div>                    <div class="pull-left" style="width:180px;">                        <div class="progress" style="height:9px; margin:8px 0;">                          <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="5" style="width: 80%">                            <span class="sr-only">80% Complete (danger)</span>                          </div>                        </div>                    </div>                    <div class="pull-right" style="margin-left:10px;">1</div>                </div>                <div class="pull-left">                    <div class="pull-left" style="width:35px; line-height:1;">                        <div style="height:9px; margin:5px 0;">3 <span class="glyphicon glyphicon-star"></span></div>                    </div>                    <div class="pull-left" style="width:180px;">                        <div class="progress" style="height:9px; margin:8px 0;">                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" style="width: 60%">                            <span class="sr-only">80% Complete (danger)</span>                          </div>                        </div>                    </div>                    <div class="pull-right" style="margin-left:10px;">0</div>                </div>                <div class="pull-left">                    <div class="pull-left" style="width:35px; line-height:1;">                        <div style="height:9px; margin:5px 0;">2 <span class="glyphicon glyphicon-star"></span></div>                    </div>                    <div class="pull-left" style="width:180px;">                        <div class="progress" style="height:9px; margin:8px 0;">                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5" style="width: 40%">                            <span class="sr-only">80% Complete (danger)</span>                          </div>                        </div>                    </div>                    <div class="pull-right" style="margin-left:10px;">0</div>                </div>                <div class="pull-left">                    <div class="pull-left" style="width:35px; line-height:1;">                        <div style="height:9px; margin:5px 0;">1 <span class="glyphicon glyphicon-star"></span></div>                    </div>                    <div class="pull-left" style="width:180px;">                        <div class="progress" style="height:9px; margin:8px 0;">                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" style="width: 20%">                            <span class="sr-only">80% Complete (danger)</span>                          </div>                        </div>                    </div>                    <div class="pull-right" style="margin-left:10px;">0</div>                </div>            </div>             </div>                <!--review block-->                <hr/>                <div class="review-block">                    <div class="row">                        <div class="col-sm-3">                            <img src="assets/images/profile1.png" class="img-rounded">                            <div class="review-block-name"><a href="#">Pedro Manuel Escobar</a></div>                            <div class="review-block-date">29 de noviembre 2018<br/>hace 1 día</div>                        </div>                        <div class="col-sm-9">                            <div class="review-block-rate">                                <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">                                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                                </button>                                <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">                                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                                </button>                                <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">                                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                                </button>                                <button type="button" class="btn btn btn-grey btn-xs" aria-label="Left Align">                                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                                </button>                                <button type="button" class="btn btn btn-grey btn-xs" aria-label="Left Align">                                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                                </button>                            </div>                            <div class="review-block-title">Excelente proyecto, buen trabajo</div>                            <div class="review-block-description">Se cumplió con el objetivo del reto, Juan Pablo es un profesional responsable, atento, proactivo y dispuesto a dar soluciones innovadoras. No tuvimos inconveniente en la comunicación, lo recomiendo para desarrollo de proyectos.</div>                        </div>                    </div>                    <hr/>                    <div class="row">                        <div class="col-sm-3">                            <img src="assets/images/profile2.png" class="img-rounded">                            <div class="review-block-name"><a href="#">Sonia Martínez</a></div>                            <div class="review-block-date">January 29, 2016<br/>1 day ago</div>                        </div>                        <div class="col-sm-9">                            <div class="review-block-rate">                                <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">                                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                                </button>                                <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">                                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                                </button>                                <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">                                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                                </button>                                <button type="button" class="btn btn btn-grey btn-xs" aria-label="Left Align">                                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                                </button>                                <button type="button" class="btn btn btn-grey btn-xs" aria-label="Left Align">                                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>                                </button>                            </div>                            <div class="review-block-title">Muy buen trabajador</div>                            <div class="review-block-description">Se cumplió con el objetivo del reto, Juan Pablo es un profesional responsable, atento, proactivo y dispuesto a dar soluciones innovadoras. No tuvimos inconveniente en la comunicación, lo recomiendo para desarrollo de proyectos.</div>                        </div>                    </div>                                        </div>                </div> </div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CrearProyectoComponent', 'selector': 'app-crear-proyecto'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'HallFamaComponent', 'selector': 'app-hall-fama'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'PostularProyectoComponent', 'selector': 'app-postular-proyecto'},{'name': 'ProyectoListComponent', 'selector': 'app-proyecto-list'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'TrabajosComponent', 'selector': 'app-trabajos'},{'name': 'UsuarioDetailComponent', 'selector': 'app-usuario-detail'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'UsuarioDetailComponent'};
 </script>

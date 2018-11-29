@@ -71,8 +71,29 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
 
-import { DashboardComponent }   from &#x27;./dashboard/dashboard.component&#x27;;
-const routes: Routes &#x3D; [{ path: &#x27;dashboard&#x27;, component: DashboardComponent }];
+import { HomeComponent } from &#x27;./Components/home/home.component&#x27;;
+import { RegisterComponent } from &#x27;./Components/register/register.component&#x27;
+import { LoginComponent } from &#x27;./Components/login/login.component&#x27;
+import { DashboardComponent }   from &#x27;./Components/dashboard/dashboard.component&#x27;;
+import { TrabajosComponent } from &#x27;./Components/trabajos/trabajos.component&#x27;;
+import { PostularProyectoComponent } from &#x27;./Components/postular-proyecto/postular-proyecto.component&#x27;;
+import { CrearProyectoComponent } from &#x27;./Components/crear-proyecto/crear-proyecto.component&#x27;;
+import {UsuarioDetailComponent} from &#x27;./Components/usuario-detail/usuario-detail.component&#x27;;
+import { HallFamaComponent } from &#x27;./Components/hall-fama/hall-fama.component&#x27;;
+
+
+const routes: Routes &#x3D; [
+  { path: &#x27;&#x27;, component: HomeComponent },
+  { path: &#x27;registro&#x27;, component: RegisterComponent },
+  { path: &#x27;login&#x27;, component: LoginComponent },
+  { path: &#x27;trabajos&#x27;, component: TrabajosComponent },
+  { path: &#x27;PostuPro&#x27;, component: PostularProyectoComponent,data:{} },
+  { path: &#x27;crearPro&#x27;, component: CrearProyectoComponent },
+  { path: &#x27;perfil&#x27;, component: UsuarioDetailComponent },
+  { path: &#x27;hall&#x27;, component: HallFamaComponent },
+  { path: &#x27;dashboard&#x27;, component: DashboardComponent }
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

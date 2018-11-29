@@ -1,0 +1,51 @@
+<div class="fullscreen landing parallax" style="background-image:url('/assets/images/bg.jpg');" data-img-width="2000"
+  data-img-height="1333" data-diff="100">
+  <div class="overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="signup-header wow fadeInUp">
+            <h3 class="form-title text-center">Crear un nuevo proyecto</h3>
+            <form [formGroup]="creaProForm" class="form-header">
+              <div class="form-group">
+                <input type="text" id="titulo" formControlName="titulo" class="form-control" placeholder="Titulo">
+                <div *ngIf="submitted && f.titulo.errors" class="invalid-feedback text-danger">
+                  <div *ngIf="f.titulo.errors.required">Titulo es requerido</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" formControlName="descripcion" placeholder="Descripción">
+                <div *ngIf="submitted && f.descripcion.errors" class="invalid-feedback text-danger">
+                  <div *ngIf="f.descripcion.errors.required">Descripción es requerido</div>
+                </div>
+              </div>
+              <div class="form-group">
+
+                <select class="form-control" formControlName="tipo">
+                  <option *ngFor="let tp of tiposProyectos" [ngValue]="tp">
+                    {{ tp.name }}
+                  </option>
+                </select>
+                <div *ngIf="submitted && f.tipo.errors" class="invalid-feedback text-danger">
+                  <div *ngIf="f.tipo.errors.required">El tipo de proyecto es requerido</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" formControlName="tags" placeholder="Etiquetas separados por ;">
+                <div *ngIf="submitted && f.tags.errors" class="invalid-feedback text-danger">
+                  <div *ngIf="f.tags.errors.required">Al menos una Etiqueta es requerida </div>
+                </div>
+              </div>
+              <label class="error">{{errorMessage}}</label>
+              <label class="success">{{successMessage}}</label>
+              <div class="form-group last">
+                <button type="submit" [disabled]="!creaProForm.valid" (click)="crearProyecto(creaProForm.value)" class="btn-primary blod">CREAR</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,6 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import { usuarioENT } from '../../entities/usuarioENT';
+
 
 @Component({
   selector: 'app-usuario-detail',
@@ -9,14 +9,12 @@ import { usuarioENT } from '../../entities/usuarioENT';
 })
 export class UsuarioDetailComponent implements OnInit {
 
-  @Input() usuario: usuarioENT; 
+  
   constructor() { }
 
   ngOnInit() {
   }
 
-  cambiar(){
-    this.usuario.name = 'Prueba¡';
-  }
+  
 
 }

@@ -1,0 +1,22 @@
+<div class="proyecto wow fadeInUp">
+    <!-- /.proyecto 1 -->
+    <div class="price-heading text-left">
+      <ul>
+        <h3>{{proyecto.titulo}}</h3>
+      </ul>
+    </div>
+    <!-- /descripcion del proyecto -->
+    <ul>
+      <li>{{proyecto.descripcion}} </li>
+      <li><strong>Publicación</strong> {{proyecto.publicacion.seconds * 1000 | date:'MM-dd-yyyy'}}</li>
+      <li><strong>Vencimiento</strong> 30 diciembre 2018</li>
+      <li><strong>Ofertante</strong> {{proyecto.usuario}} <i class="pe-7s-check pe-5x"></i> Ranking:
+        4.5 /
+        5</li>
+    </ul>
+    <!-- <a (click)="enviarDatos();" class="btn-primary blod">Mídetele</a> /botón -->
+    <div class="price-footer text-right">
+        <!--<a class="btn btn-price" [routerLink] = "['/PostuPro', proyecto]">Mídetele</a> -->
+        <a (click)="enviarDatos();" class="btn">Mídetele</a>
+    </div>
+  </div>

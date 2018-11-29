@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { usuarioENT} from './entities/usuarioENT'; 
 
 /**
  * Componente Inicial, la documentación se genera utilizando el comando npm run compodoc.
  *
  * Para visualizar utilizar el comando nws en la carpeta documentation creada con el comando anterior. 
+ * 
+ * Para desplegar la aplicación utilizar el comando ng build para compilar y firebird deploy para publicar. 
   */
 @Component({
   selector: 'app-root',
@@ -13,11 +14,7 @@ import { usuarioENT} from './entities/usuarioENT';
 })
 
 export class AppComponent implements OnInit {
-  title = 'Conecta3'
-  usuario: usuarioENT = {
-    id: 1,
-    name: 'Windstorm'
-  };
+
   /**
    * @ignore
    */

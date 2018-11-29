@@ -1,25 +1,27 @@
 <!-- NAVIGATION -->
 <div id="menu">
-        <nav class="navbar-wrapper navbar-default" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-backyard">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand site-name" href="#top">CON<span class="highlight">E</span>CTA</a>
-                </div>
-      
-                <div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#feature">QUIERO TRABAJAR</a></li>
-                        <li><a href="#download">PUBLICAR UN PROYECTO</a></li>
-                        <li><a href="#package">TRABAJOS</a></li>
-                        <li><a routerLink="/registro">REGISTRO</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+  <nav class="navbar-wrapper navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-backyard">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand site-name" href="#">CON<span class="highlight">E</span>CTA</a>
       </div>
+
+      <div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a routerLink="/trabajos">QUIERO TRABAJAR</a></li>
+          <li><a routerLink="/crearPro">PUBLICAR UN RETO</a></li>
+          <li *ngIf="dataSharingService.isRegister"><a routerLink="/login">ACCEDER</a></li>
+          <li *ngIf="dataSharingService.isRegister"><a routerLink="/registro">REGISTRO</a></li>
+          <li *ngIf="! dataSharingService.isRegister"><a routerLink="/perfil">PERFIL</a> </li>
+          <li *ngIf="! dataSharingService.isRegister"><a (click)="doLogut()">SALIR</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
